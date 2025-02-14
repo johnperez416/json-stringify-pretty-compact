@@ -25,8 +25,16 @@ npm install json-stringify-pretty-compact
 ```
 
 ```js
-const stringify = require("json-stringify-pretty-compact");
+import stringify from "json-stringify-pretty-compact";
 ```
+
+> **Note:** This is an [ESM only package]. (I haven’t written that gist, but it’s a great resource.)
+>
+> If you need CommonJS, install version 3.0.0. You won’t be missing out on anything: This package is _done._ No more features will be added, and no bugs have been found in years.
+
+**Want a CLI?** Check out [avantgardnerio/json-stringify-pretty-compact-cli]!
+
+**Web version?** Check out the [online demo]!
 
 ## `stringify(obj, options = {})`
 
@@ -49,4 +57,7 @@ It’s like `JSON.stringify(obj, options.replacer, options.indent)`, except that
 [MIT](LICENSE).
 
 [@aitodotai/json-stringify-pretty-compact]: https://www.npmjs.com/package/@aitodotai/json-stringify-pretty-compact
+[avantgardnerio/json-stringify-pretty-compact-cli]: https://github.com/avantgardnerio/json-stringify-pretty-compact-cli
+[esm only package]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
 [json.stringify]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
+[online demo]: https://lydell.github.io/json-stringify-pretty-compact/
